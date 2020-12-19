@@ -60,4 +60,4 @@ const eeaMember = factory(EEA_COUNTRIES)
 /* European Union Members */
 const euMember = factory(EU_COUNTRIES)
 
-module.exports = { eeaMember, euMember }
+module.exports = { eeaMember, euMember, getCountry }
