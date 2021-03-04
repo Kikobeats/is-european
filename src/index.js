@@ -51,8 +51,11 @@ const getValidator = input => {
 
 const getCountry = input => iso31661.find(getValidator(input))
 
-const factory = collection => input =>
-  collection.includes(getCountry(input).name)
+const factory = collection => input => {
+  if (input === null || input === undefined) return false
+  const country = getCountry(input)
+  return country ? collection.includes(country.name) : false
+}
 
 /* European Economic Area Members */
 const eeaMember = factory(EEA_COUNTRIES)

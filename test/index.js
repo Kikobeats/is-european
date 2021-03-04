@@ -2,9 +2,9 @@
 
 const test = require('ava')
 
-const { euMember, eeaMember } = require('.')
+const { euMember, eeaMember } = require('../src')
 
-test('by name', t => {
+test('ISO 3166-1 name', t => {
   t.false(euMember('Norway'))
   t.false(euMember('norway'))
   t.true(eeaMember('norway'))
@@ -24,4 +24,11 @@ test('ISO 3166-1 alpha-2', t => {
 test('ISO 3166-1 alpha-3', t => {
   t.false(euMember('NOR'))
   t.true(eeaMember('NOR'))
+})
+
+test('invalid', t => {
+  ;['XX', 0, '', null, undefined].forEach(input => {
+    t.false(euMember(input))
+    t.false(eeaMember(input))
+  })
 })
