@@ -27,7 +27,7 @@ test('ISO 3166-1 alpha-3', t => {
 })
 
 test('invalid', t => {
-  ;['XX', 0, '', null, undefined].forEach(input => {
+  ;['XX', 0, '', null, undefined, NaN].forEach(input => {
     t.false(euMember(input))
     t.false(eeaMember(input))
   })
