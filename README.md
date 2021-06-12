@@ -30,7 +30,8 @@ eeaMember('Norway') // => true
 
 ## Related
 
-- [country-vat](https://github.com/Kikobeats/is-european) – Get a country VAT rate. ISO 3166-1 compliant.
+- [req-country](https://github.com/Kikobeats/req-country) – Given a request, get the country associated with it. ISO 3166-1 alpha-2 compliant.
+- [country-vat](https://github.com/Kikobeats/country-vat) – Get a country VAT rate. ISO 3166-1 compliant.
 - [tom.js.org](https://tom.js.org) – tom 🐶 is a backoffice for your projects.
 
 ## License
