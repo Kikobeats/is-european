@@ -28,6 +28,11 @@ eeaMember('NOR') // => true
 eeaMember('Norway') // => true
 ```
 
+## Related
+
+- [country-vat](https://github.com/Kikobeats/is-european) – Get a country VAT rate. ISO 3166-1 compliant.
+- [tom.js.org](https://tom.js.org) – tom 🐶 is a backoffice for your projects.
+
 ## License
 
 **is-european** © [Kiko Beats](https://kikobeats.com), released under the [MIT](https://github.com/Kikobeats/is-european/blob/master/LICENSE.md) License.<br>
