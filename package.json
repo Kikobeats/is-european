@@ -2,7 +2,7 @@
   "name": "is-european",
   "description": "Check if a country is part of EU (European Union) or EEA (pean Economic Area). ISO 3166-1 compliant",
   "homepage": "https://nicedoc.io/Kikobeats/is-european",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "main": "src/index.js",
   "author": {
     "email": "josefrancisco.verdu@gmail.com",
