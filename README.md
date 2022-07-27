@@ -1,7 +1,6 @@
 # is-european
 
 ![Last version](https://img.shields.io/github/tag/Kikobeats/is-european.svg?style=flat-square)
-[![Build Status](https://img.shields.io/travis/com/Kikobeats/is-european/master.svg?style=flat-square)](https://travis-ci.com/Kikobeats/is-european)
 [![Coverage Status](https://img.shields.io/coveralls/Kikobeats/is-european.svg?style=flat-square)](https://coveralls.io/github/Kikobeats/is-european)
 
 > Check if a country is part of the EU (European Union) or EEA (European Economic Area). ISO 3166-1 compliant.
