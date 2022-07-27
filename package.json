@@ -27,7 +27,7 @@
     "union"
   ],
   "dependencies": {
-    "iso-3166": "~3.1.0"
+    "iso-3166": "~4.0.1"
   },
   "devDependencies": {
     "@commitlint/cli": "latest",
