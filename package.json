@@ -1,7 +1,7 @@
 {
   "name": "is-european",
   "description": "Check if a country is part of EU (European Union) or EEA (pean Economic Area). ISO 3166-1 compliant",
-  "homepage": "https://nicedoc.io/Kikobeats/is-european",
+  "homepage": "https://github.com/Kikobeats/is-european",
   "version": "1.0.4",
   "main": "src/index.js",
   "author": {
@@ -32,6 +32,7 @@
   "devDependencies": {
     "@commitlint/cli": "latest",
     "@commitlint/config-conventional": "latest",
+    "@ksmithut/prettier-standard": "latest",
     "ava": "latest",
     "c8": "latest",
     "ci-publish": "latest",
@@ -40,7 +41,6 @@
     "git-authors-cli": "latest",
     "nano-staged": "latest",
     "npm-check-updates": "latest",
-    "prettier-standard": "latest",
     "simple-git-hooks": "latest",
     "standard": "latest",
     "standard-markdown": "latest",
@@ -54,7 +54,7 @@
   ],
   "scripts": {
     "clean": "rm -rf node_modules",
-    "contributors": "(git-authors-cli && finepack && git add package.json && git commit -m 'build: contributors' --no-verify) || true",
+    "contributors": "(npx git-authors-cli && npx finepack && git add package.json && git commit -m 'build: contributors' --no-verify) || true",
     "coverage": "nyc report --reporter=text-lcov | coveralls",
     "lint": "standard-markdown README.md && standard",
     "postrelease": "npm run release:tags && npm run release:github && (ci-publish || npm publish --access=public)",
@@ -75,7 +75,8 @@
   },
   "nano-staged": {
     "*.js,!*.min.js,": [
-      "prettier-standard"
+      "prettier-standard",
+      "standard --fix"
     ],
     "*.md": [
       "standard-markdown"
